@@ -6,7 +6,7 @@ public class ChatRoomDto {
 
     private String uuid;
     private String name;
-    private List<UserDto> users;
+    private List<String> userIds;
     private List<ChatMessageDto> chats;
 
     public String getUuid() {
@@ -25,12 +25,12 @@ public class ChatRoomDto {
         this.name = name;
     }
 
-    public List<UserDto> getUsers() {
-        return users;
+    public List<String> getUserIds() {
+        return userIds;
     }
 
-    public void setUsers(List<UserDto> users) {
-        this.users = users;
+    public void setUserIds(List<String> userIds) {
+        this.userIds = userIds;
     }
 
     public List<ChatMessageDto> getChats() {
@@ -46,7 +46,7 @@ public class ChatRoomDto {
         return "ChatRoomDto{" +
                 "uuid='" + uuid + '\'' +
                 ", name='" + name + '\'' +
-                ", users=" + users +
+                ", users=" + userIds +
                 ", chats=" + chats +
                 '}';
     }
